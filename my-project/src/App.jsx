@@ -9,8 +9,11 @@ function App() {
   return (
     <div >
       <Header/>
-      <h1>hi</h1>
+      <div>
+        
+      </div>
     </div>
+      
 
   )
 }

@@ -1,7 +1,11 @@
 const Header = () => {
   return (
-    <div>
-      <h1 className='bg-red-600'  >hi new here</h1>
+    <div className="bg-black">
+      {/* Left section */}
+      <div className="p-8">
+       <img src="../../assets/abstract logo.jpg" alt="abstract logo" className="rounded-lg w-8 " />
+      </div>
+      
     </div>
   )
 }
