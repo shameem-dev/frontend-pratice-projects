@@ -7,3 +7,9 @@
 body {
     font-family: "Space Grotesk", sans-serif;
 }
+
+@media (min-width: 668px) {
+    .width-input {
+        width: 600px;
+    }
+ }

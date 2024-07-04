@@ -28,16 +28,20 @@ const Header = () => {
             </div>
 
             {/* Right section */}
-            <div className='flex items-center'>
-            <div className='hover:scale-110 cursor-pointer' onClick={toggleSearch}>
-                <box-icon name='search' color='rgba(250,250,250,0.9)' size='md'></box-icon>
-            </div>
+            <div className='flex items-center md:hidden'>
+              <div className='hover:scale-110 cursor-pointer' onClick={toggleSearch}>
+                  <box-icon name='search' color='rgba(250,250,250,0.9)' size='md'></box-icon>
+              </div>
             <div className='ml-3 cursor-pointer' onClick={toggleMenu}>
                 { menuActive ? <box-icon name='x'color='rgba(250,250,250,0.9)' size='md'></box-icon> :
                 <box-icon name='menu' color='rgba(250,250,250,0.9)' size='md' ></box-icon> 
                 
 }
             </div>
+            </div>
+            <div className='hidden md:block text-white'>
+              <button className="btn btn-wide  bg-black text-white outline outline-1 outline-white hover:bg-black" >Submit a request</button>
+              <button className="btn bg-violet-700 text-white hover:bg-white hover:text-black outline-none ml-4">Sign in</button>
             </div>
         </div>
         
