@@ -17,10 +17,10 @@ const Header = () => {
     <div className={`${searchActive ? 'bg-white' : 'bg-black'}   `}>
         <div className={`py-6 px-4 md:px-24 ${searchActive ? 'hidden':'block'}  flex justify-between `}>
             {/* Left section */}
-            <div className="flex">
+            <div className="flex items-center">
             <a href="https://www.abstract.com/" className="flex">
-                <img src="../../assets/abstract logo.jpg" alt="abstract logo" className="rounded-md w-8 h-8" />
-                <p className="text-white text-2xl pl-2 font-medium">Abstract</p>
+                <img src="../../assets/60c388bf3c3ae4d1d10653e7_Abstract_Wordmark-White.svg" alt="abstract logo" className="rounded-md  h-8 pl-2" />
+                
             </a>
             <a href="">
                 <p className="text-white text-2xl pl-2 font-normal">| Help Center</p>
@@ -28,7 +28,7 @@ const Header = () => {
             </div>
 
             {/* Right section */}
-            <div className='flex'>
+            <div className='flex items-center'>
             <div className='hover:scale-110 cursor-pointer' onClick={toggleSearch}>
                 <box-icon name='search' color='rgba(250,250,250,0.9)' size='md'></box-icon>
             </div>
@@ -41,7 +41,7 @@ const Header = () => {
             </div>
         </div>
         
-        <div className={`px-4 md:px-24 py-6 flex items-center ${searchActive ? 'block':'hidden'}`}>
+        <div className={`px-4   md:px-24 py-6 flex items-center ${searchActive ? 'block':'hidden'}`}>
             
             <input
             
@@ -60,7 +60,7 @@ const Header = () => {
       
 
 {menuActive && (
-        <div>
+        <div className='absolute top-[90px] w-full bg-black'>
             <hr />
             <div className=' text-white flex flex-col items-center text-3xl'>
                 <div className='m-7'>
